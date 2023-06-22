@@ -3,6 +3,8 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
+char **op_toks = NULL;
+
 /**
  * main - the entry point for Monty Interp
  *
@@ -13,8 +15,6 @@
  */
 int main(int argc, char **argv)
 {
-	char **op_toks = NULL;
-
 	FILE *script_fd = NULL;
 	int exit_code = EXIT_SUCCESS;
 
